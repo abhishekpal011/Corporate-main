@@ -1,0 +1,151 @@
+#features {
+    position: relative;
+    padding: 140px 0;
+
+    @media screen and (max-width:$xl) {
+        padding: 100px 0;
+    }
+
+    @media screen and (max-width:$lg) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width:$sm) {
+        padding: 50px 0;
+    }
+
+    @media screen and (max-width:$xs) {
+        padding: 30px 0;
+    }
+    .row{
+        @media screen and (max-width:$sm) {
+           row-gap: 15px;
+        }
+    }
+
+    .features-title {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 75px;
+
+        @media screen and (max-width:$xl) {
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width:$sm) {
+            margin-bottom:10px;
+        }
+
+        h6 {
+            margin-bottom: 18px;
+             @media screen and (max-width:$sm) {
+            margin-bottom:5px;
+            letter-spacing: 0;
+        }
+        }
+
+        h3{
+            @media screen and (max-width:$md) {
+                font-size:$medium;
+                
+            }
+            @media screen and (max-width:$sm) {
+                font-size:$medium;
+                
+            }
+            @media screen and (max-width:$xs) {
+                font-size:calc($extra-small + 5px);
+                line-height: $small;
+                
+            }
+        }
+    }
+
+    .features-card {
+        width: calc(33.33% - 20px);
+        text-align: center;
+        padding: 20px;
+        transition: all .5s;
+.card-image{
+   @media screen and (max-width:$xs) {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+   }
+
+    img{
+        @media screen and (max-width:$xs) {
+           width: 100%;
+           }
+    }
+}
+
+        @media screen and (max-width:$sm) {
+            width: 100%;
+            align-items: inherit;
+            border: solid 1px $grey;
+
+        //    &:last-child{
+        //     border-bottom: none;
+        //    }
+            
+        }
+
+        &:hover {
+            background-color: $light-white;
+        }
+
+        h4 {
+            padding: 34px 0 15px 0;
+            color: $black;
+            @media screen and (max-width:$lg) {
+               font-size: $extra-small + 4px;
+            }
+        
+            @media screen and (max-width:$md) {
+                font-size: $extra-small;
+                padding: 15px 0;
+            }
+        
+            @media screen and (max-width:$sm) {
+                font-size: $mini-size;
+            }
+            @media screen and (max-width:$xs) {
+                padding: 8px 0;
+                line-height: $extra-small-height;
+                 
+             }
+        }
+
+        p {
+            font-family: poppins;
+            font-size: $mini-size;
+            font-weight: 400;
+            line-height: $small;
+            color: $grey;
+            max-width: 293px;
+            text-align: center;
+            @media screen and (max-width:$sm) {
+                text-align: inherit;
+                max-width: 100%;
+                
+            }
+           
+        }
+    }
+
+    &:after {
+        position: absolute;
+        top: 175px;
+        left: 0;
+        content: "";
+        width: 51px;
+        height: 112px;
+        background-image: url(../images/dotted.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        @media screen and (max-width:$md) {
+           display: none; 
+        }
+    }
+}

@@ -1,0 +1,182 @@
+#header {
+    padding: 24px 0;
+    position: relative;
+@media screen and (max-width:$xs) {
+    padding: 10px 0;
+}
+
+
+&.show .nav{
+display:block;
+width: 100%;
+position: absolute;
+top:100%;
+left: 0;
+
+z-index: 11;
+background-color: $white;
+}
+&.show .nav ul{
+    display: block;
+    border-top: solid 1px $grey;
+    padding: 15px 0;
+}
+&.show .nav ul li{
+   
+    a{
+        padding: 5px 10px;
+        &:hover{
+            background-color: $light-grey;
+            color: $white;
+           }
+    } 
+}
+&.show .line2{
+    display: none;
+}
+&.show .line1{
+  top: 3px;
+  position: relative;
+   transform: rotate(45deg);
+}
+&.show .line3{
+    transform: rotate(-45deg);
+ 
+}
+
+
+    .nav {
+        display: flex;
+        align-items: center;
+       
+        @media screen and (max-width:$sm) {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            column-gap: 55px;
+          
+
+            @media screen and (max-width:$md) {
+                column-gap: 30px;
+            }
+
+           
+
+            li {position: relative;
+                padding-bottom: 5px;
+
+
+
+                a {
+                    padding-bottom: 4px;
+                    display: block;
+                    // position: relative;
+                    @media screen and (max-width:$sm) {
+                        position: relative;
+                    }
+
+                    &:hover {
+                        color: $primary;
+                    }
+
+                    &:after {
+                        transition: all .5s;
+                        width: 0;
+                        height: 2px;
+                        position: absolute;
+                        content: "";
+                        bottom: 0;
+                        left: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        color: $primary;
+                        background-color: $primary;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                        visibility: visible;
+                        opacity: 1;
+                        @media screen and (max-width:$sm) {
+                            display: none;
+                        }
+                    }
+
+                    &.active {
+                        color: $primary;
+
+                        &::after {
+                            width: 100%;
+                            visibility: visible;
+                            opacity: 1;
+
+                            @media screen and (max-width:$sm) {
+                                display: none;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+
+        @media screen and (max-width:$sm) {
+            display: flex;
+            align-items: center;
+        }
+
+        a.btn {
+            transition: all .5s;
+            border-radius: 5px;
+
+            @media screen and (max-width:$sm) {
+                font-size: calc($mini-size - 2px);
+                padding: 10px 14px;
+            }
+            @media screen and (max-width:$xs) {
+                display:none;
+            }
+
+
+
+            &:hover {
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+
+        .toggle {
+            display: none;
+
+            @media screen and (max-width:$sm) {
+                display: block;
+            }
+
+
+            .line1,
+            .line3 {
+                width: 32px;
+                height: 3px;
+                transition: all ease .5s;
+                background-color: $black;
+            }
+
+            .line2 {
+                width: 32px;
+                height: 3px;
+                margin: 5px 0;
+                background-color: $black;
+            }
+        }
+    }
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <img src="images/logo-image.png">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <a href="#" class="btn">Contact us today</a>
+
+                    <div class="toggle">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="banner-left">
+                    <h1>Our <span>consultation</span> is always in sync<br> with your strategy</h1>
+                    <p>Scelerisque dignissim in leo at magna donec mi metus ipsum luctus nam elit sociis luctus et
+                        aliquam libero.</p>
+                    <a href="#" class="btn">Our Services</a>
+                </div>
+                <div class="banner-right">
+                    <img src="images/banner-image.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="features-title">
+                    <h6>CARE FEATURES</h6>
+                    <h3>Awesome Service With Our Tools</h3>
+                </div>
+                <div class="features-card">
+                    <div class="card-image">
+                        <img src="images/image 2 (3).svg">
+                    </div>
+                    <h4>App Development</h4>
+                    <p>Helping families live intelligently means we’re always working to bring our customers.</p>
+                </div>
+                <div class="features-card">
+                    <div class="card-image">
+                        <img src="images/image 2 (4).svg">
+                    </div>
+                    <h4>App Development</h4>
+                    <p>Helping families live intelligently means we’re always working to bring our customers.</p>
+                </div>
+                <div class="features-card">
+                    <div class="card-image">
+                        <img src="images/image 2 (5).svg">
+                    </div>
+                    <h4>App Development</h4>
+                    <p>Helping families live intelligently means we’re always working to bring our customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row about-main">
+                <div class="about-left">
+                    <div class="about-image">
+                        <img src="images/Rectangle 2.png">
+                    </div>
+                    <div class="about-image">
+                        <img src="images/Rectangle 3.png">
+                    </div>
+                </div>
+                <div class="about-right">
+                    <h6>About</h6>
+                    <h2>Influencer Marketing for Your Business</h2>
+                    <p>With over 25 years of experience, we have crafted thousands of Strategic discovery process that
+                        enables us to peel back the Layers which enable us to understand, connect, represent and
+                        Dominate your market.</p>
+                    <a href="tel:+002698 22 33" class="btn">Phone Number: +002698 22 33</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="container">
+            <div class="row">
+                <div class="service-title">
+                    <h6>Our Services</h6>
+                    <h2>Amazing Business Services</h2>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="images/Rectangle 5.png">
+                        <div class="service-card-text">
+                            <h4>Technical Analysis</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look
+                                even slightly believable. If you are going</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="images/Rectangle 5 (1).png">
+                        <div class="service-card-text">
+                            <h4>Technical Analysis</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look
+                                even slightly believable. If you are going</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <div class="container">
+            <div class="row">
+                <div class="project-left">
+                    <div class="pro-left-image">
+                        <img src="images/project-image.png">
+                    </div>
+                    <div class="pro-design">
+
+                        <h6>Financials projectionals and Analysis</h6>
+                        <ul>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#" class="active">Business</a></li>
+                        </ul>
+                        <div class="range">
+                            <ul>
+                                <li>New Visitors</li>
+                                <li class="range" id="rangeValue">75%</li>
+                            </ul>
+                            <input type="range" value="75" min="" max="100" onChange="rangeSlide(this.value)"
+                                onmousemove="rangeSlide(this.value)">
+
+                        </div>
+                        <div class="pro-design-bottom">
+                            <ul>
+                                <li>Project Team Members</li>
+                                <li><img src="images/image 3.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <h6>Who We Are</h6>
+                    <h2>Have A Project In Mind? Let’s Get To Work.</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam
+                        rem apereaque abillo inventore veritatis quasi architecto beatae</p>
+                    <ul>
+                        <li><span>1.</span><a href="#">Business Planning, Strategy</a></li>
+                        <li><span>2.</span><a href="#">Financial Projections And Analysis</a></li>
+                        <li><span>3.</span><a href="#">International Business Opportunities</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="global">
+        <div class="container">
+            <div class="row">
+                <div class="global-title">
+                    <h6>Latest Project & Case</h6>
+                    <h3>Let’s Looks Our Global Projects</h3>
+                </div>
+            </div>
+        </div>
+        <div class="global-card-main">
+            <div class="global-card">
+                <img src="images/Rectangle 7 (1).png">
+                <div class="global-card-text">
+                    <h4>Technical Analysis</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                </div>
+            </div>
+            <div class="global-card">
+                <img src="images/Rectangle 8 (1).png">
+                <div class="global-card-text">
+                    <h4>Technical Analysis</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                </div>
+            </div>
+            <div class="global-card">
+                <img src="images/Rectangle 9 (1).png">
+                <div class="global-card-text">
+                    <h4>Technical Analysis</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                </div>
+            </div>
+            <div class="global-card">
+                <img src="images/Rectangle 10 (1).png">
+                <div class="global-card-text">
+                    <h4>Technical Analysis</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="together">
+        <div class="container">
+            <div class="row">
+                <div class="together-content">
+                    <h2>Get Free Consultations! We’re Ready to Work Together</h2>
+                    <a href="#" class="btn">Get Free Consultations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="team-title">
+                    <h6>Meet Our Team</h6>
+                    <h3>Experience Team Members</h3>
+                </div>
+                <div class="team-card-main">
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="./images/team-1.png">
+                        </div>
+                        <div class="team-card-text">
+                            <h5>Robert C. Simmons</h5>
+                            <p>Business Consultant</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="./images/team-2.png">
+                        </div>
+                        <div class="team-card-text">
+                            <h5>Christopher L. Wagner</h5>
+                            <p>Senior Manager</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="./images/team-3.png">
+                        </div>
+                        <div class="team-card-text">
+                            <h5>Lawrence C. Dickerson</h5>
+                            <p>Financial Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="news-bg">
+                    <div class="container-small">
+                        <div class="row">
+                            <div class="news-box">
+                                <h4>Subscribe to Our Newsletter For Weekly Article Update.</h4>
+                                <p>Passages of lorem ipsum available, but the majority have suffered alteration, by
+                                    injected words.</p>
+                            </div>
+                            <div class="news-button">
+                                <a href="#" class="btn">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-1">
+                    <div class="footer-image">
+                       <a href="#"> <img src="images/footer-logo.png"></a>
+                    </div>
+                    <p>2021 Award winning Vaccination and Lorem ipsum dolor sit amet</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-2">
+                    <h5>Location</h5>
+                    <ul>
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Africa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-2">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-2">
+                    <h5>Legals</h5>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Company</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function rangeSlide(value) {
+            document.getElementById('rangeValue').innerHTML = value;
+        }
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+$('.toggle').click(function(){
+    $('#header').toggleClass('show')
+})
+    });
+</script>
+
+
+</body>
+
+</html>

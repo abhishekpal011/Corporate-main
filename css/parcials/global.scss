@@ -1,0 +1,137 @@
+#global {
+    padding-bottom: 130px;
+
+    @media screen and (max-width:$lg) {
+        padding: 70px 0;
+    }
+    @media screen and (max-width:$sm) {
+        padding: 0 0 50px 0;
+    }
+    @media screen and (max-width:$xs) {
+        padding: 0 0 30px 0;
+    }
+
+    .global-title {
+        text-align: center;
+        padding-bottom: 86px;
+        margin: 0 auto;
+        @media screen and (max-width:$lg) {
+           padding-bottom: 74px;
+        }
+        @media screen and (max-width:$md) {
+            padding-bottom:50px;
+         }
+         @media screen and (max-width:$sm) {
+            padding-bottom:15px;
+         }
+        //  @media screen and (max-width:$xs) {
+        //     padding-bottom:15px;
+        //  }
+
+        h6{
+            margin-bottom: 26px;
+            @media screen and (max-width:$sm) {
+                margin-bottom:5px;
+                letter-spacing: 0;
+             }
+            //  @media screen and (max-width:$sm) {
+              
+                
+            //    }
+        }
+        h3{
+            @media screen and (max-width:$sm) {
+              font-size: $medium;
+              line-height: $small-height - 4px;
+             } 
+             @media screen and (max-width:$xs) {
+                font-size:$small-medium-height;
+                line-height: $extra-small-height + 10px;
+               }
+        }
+    }
+
+    .global-card-main {
+        display: flex;
+        column-gap: 30px;
+        flex-wrap: wrap;
+        @media screen and (max-width:$lg) {
+           row-gap: 15px;
+           column-gap: 15px;
+         }
+
+        .global-card {
+            width: calc(25% - 22.5px);
+            position: relative;
+            overflow: hidden;
+            @media screen and (max-width:$lg) {
+                width: calc(50% - 7.5px);
+             }
+            
+             @media screen and (max-width:$xs) {
+                width:100%;
+                padding: 0 15px;
+               
+             }
+
+
+           &::after{
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(1deg, #FD5C30 0.53%, rgba(0, 0, 0, 0.00) 101.68%);
+            @media screen and (max-width:$xs) {
+           left: 15px;
+           right: 15px;
+           width:auto;
+               
+             }
+           
+           }
+
+           &:hover img{
+            transform: scale(1.2);
+           }
+
+            img {
+                width: 100%;
+                height: 100%;
+                transform: scale(1);
+                transition: all ease .5s;
+            }
+
+            .global-card-text {
+                position: absolute;
+                bottom: 34px;
+                left: 43px;
+                right: 15px;
+                z-index: 11;
+                @media screen and (max-width:$sm) {
+                 left: 15px;
+                   }
+                   @media screen and (max-width:$xs) {
+                    padding: 0 15px;
+                      }
+
+    h4{
+        @media screen and (max-width:$sm) {
+          font-size: $extra-small + 2px;
+         } 
+    }
+
+
+                p {
+                    color: $white;
+                    font-family: Poppins;
+                    font-size:$mini-size;
+                    font-style:$small;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

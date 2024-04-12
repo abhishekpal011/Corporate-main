@@ -1,0 +1,56 @@
+h1 {
+   
+    @include font( $double-extra-large, $extra-large-height, $white);
+    font-family: Poppins;
+}
+h2 {
+    @include font($extra-large, $large-height, $secondary);
+    font-family: poppins;
+}
+
+h3 {
+    @include font($large-medium, $medium-height, $secondary);
+    font-family: poppins;
+}
+h4{
+    @include font($medium, $small-height, $white);
+    font-family: poppins;
+    font-weight: 600
+}
+h5{
+    @include font($small, $small, $secondary);
+    font-family: poppins;
+    font-weight: 500
+}
+h6{
+   @include font($extra-small, $extra-small-height, $primary);
+   letter-spacing: 4.2px;
+   font-family: Poppins;
+   font-weight: 500;
+}
+
+span {
+    color: $primary;
+    font-family: Poppins;
+    
+}
+
+a.btn {
+    padding: 14px 17px;
+    background-color:$primary;
+    color: #fff;
+    border-radius: 2px;
+    display: block;
+    max-width: fit-content;
+    font-family: Lato;
+
+}
+
+li a {
+    font-size: $mini-size;
+    color: $black;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: $extra-small-height;
+    transition: all ease .5s;
+}

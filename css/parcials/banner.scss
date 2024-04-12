@@ -1,0 +1,141 @@
+#banner {
+    position: relative;
+    background-color: $secondary;
+    padding-top: 54px;
+
+    @media screen and (max-width:$md) {
+       padding-top: 40px;  
+     }
+
+    .banner-left {
+        width: 55%;
+        padding: 84px 0 138px 0;
+        @media screen and (max-width:$xl) {
+            padding: 60px 0 100px 0;  
+        }
+        @media screen and (max-width:$lg) {
+            padding: 40px 0 80px 0;  
+        }
+        @media screen and (max-width:$md) {
+            padding: 0px 0 40px 0;  
+        }
+        @media screen and (max-width:$sm) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+           }
+
+        h1{ 
+   
+             font-size: $double-extra-large;
+             line-height: $extra-large-height;
+            font-family: Poppins;
+        
+
+
+
+
+            @media screen and (max-width:$lg) {
+               font-size: $extra-large;
+               line-height: $medium-height;  
+            }
+            @media screen and (max-width:$md) {
+                font-size: $large-medium;
+                line-height: $small-height;  
+             }
+
+             @media screen and (max-width:$sm) {
+               font-size:calc($medium - 5px);
+               line-height: calc($extra-small-height + 10px);
+               }
+             br{
+                @media screen and (max-width:$sm) {
+                    display: none;
+                   }
+             }
+        }
+
+        p {
+            padding: 23px 0;
+            max-width: 470px;
+            font-family: Inter;
+            color: $light-white;
+            line-height: 26px;
+            @media screen and (max-width:$md) {
+                padding: 15px 0;  
+             }
+             @media screen and (max-width:$sm) {
+                padding: 10px 0;
+                line-height: $small;  
+             }
+        }
+
+        a {
+            padding: 13px 17px;
+            transition: all .5s;
+            @media screen and (max-width:$sm) {
+                padding: 7px 10px;
+                
+             }
+
+            &:hover {
+                background-color: $white;
+                color: $secondary;
+            }
+        }
+
+    }
+
+    .banner-right {
+        width: 45%;
+        display: flex;
+        @media screen and (max-width:$sm) {
+            display: none;
+           }
+
+
+        img {
+            @media screen and (max-width:$xl) {
+                width: 100%;
+            }
+        }
+
+    }
+
+    &::after {
+        position: absolute;
+        top: 26px;
+        right: 0;
+        content: "";
+        width: 51px;
+        height: 112px;
+        background-image: url(../images/dotted.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: brightness(0) invert(1);
+        @media screen and (max-width:$sm) {
+           display: none;
+           }
+
+    }
+
+    &::before {
+        position: absolute;
+        bottom: 24px;
+        left: 0;
+        content: "";
+        width: 51px;
+        height: 112px;
+        background-image: url(../images/dotted.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: brightness(0) invert(1);
+
+        @media screen and (max-width:$lg) {
+           display: none; 
+         }
+
+    }
+}

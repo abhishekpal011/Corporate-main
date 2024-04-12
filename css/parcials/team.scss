@@ -1,0 +1,167 @@
+#team {
+    padding: 130px 0;
+    position: relative;
+
+    @media screen and (max-width:$lg) {
+        padding: 70px 0;
+    }
+    @media screen and (max-width:$md) {
+        padding: 50px 0; 
+      }
+      @media screen and (max-width:$xs) {
+        padding: 30px 0; 
+      }
+
+    .team-title {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        @media screen and (max-width:$lg) {
+         margin-bottom: 50px; 
+         }
+         @media screen and (max-width:$md) {
+            margin-bottom:40px; 
+            }
+            @media screen and (max-width:$sm) {
+                margin-bottom:30px; 
+                }
+                @media screen and (max-width:$xs) {
+                    margin-bottom:15px; 
+                    }
+
+        h6 {
+            margin-bottom: 30px;
+            @media screen and (max-width:$lg) {
+              margin-bottom: 15px;
+             }
+             @media screen and (max-width:$md) {
+               margin-top: 10px;
+              }
+              @media screen and (max-width:$sm) {
+               margin:0 0 5px 0;
+               letter-spacing:0;
+               }
+        }
+        h3{
+            @media screen and (max-width:$sm) {
+               font-size: $medium + 2px;
+               line-height: $small-height - 2px;
+              }
+              @media screen and (max-width:$xs) {
+                font-size:$small-medium-height;
+                line-height:$small + 5px;
+               }
+        }
+    }
+
+    .team-card-main {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap; 
+        column-gap: 30px;
+        @media screen and (max-width:$sm) {
+            row-gap: 15px;
+             }
+
+        .team-card {
+            width: calc(33.33% - 20px);
+            background-color: $white;
+            @media screen and (max-width:$sm) {
+             width: 100%;
+              }
+            
+
+            .team-card-image {
+                overflow: hidden;
+                border-radius: 15px 15px 0 0;
+
+                img {
+                    width: 100%;
+                    transform: scale(1);
+                    transition: all ease .5s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .team-card-text {
+                padding: 27px 25px;
+                border: solid 1px #F5F5F5;
+                border-radius: 0 0 15px 15px;
+                @media screen and (max-width:$sm) {
+                    padding: 15px 0;
+                    text-align: center;
+                    }
+
+                h5 {
+                    color: $black;
+                    font-family: Poppins;
+                    font-size: $extra-small;
+                    font-weight: 600;
+                    line-height: $small;
+                    margin-bottom: 15px;
+                    @media screen and (max-width:$md) {
+                        font-size: $mini-size - 4px;
+                        margin-bottom: 5px;
+                      }
+                      @media screen and (max-width:$sm) {
+                        font-size:inherit;
+                        margin-bottom:inherit;
+                      }
+                }
+
+                p {
+                    color: $dark-grey;
+                    font-family: Poppins;
+                    font-size: $mini-size;
+                    font-weight: 400;
+                    line-height: $extra-small-height;
+                    @media screen and (max-width:$md) {
+                        font-size: $mini-size - 6px;
+                       
+                      }
+                }
+            }
+
+
+        }
+
+    }
+
+    
+    &::after{
+        position: absolute;
+        top:130px;
+        right: 0;
+        content: "";
+        width: 51px;
+        height: 112px;
+        background-image: url(../images/dotted.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        // filter: brightness(0) invert(1);
+        @media screen and (max-width:$lg) {
+           display: none; 
+         }
+       
+
+    }
+    &::before{
+        position: absolute;
+        bottom:130px;
+        left: 0;
+        content: "";
+        width: 51px;
+        height: 112px;
+        background-image: url(../images/dotted.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        // filter: brightness(0) invert(1);
+        @media screen and (max-width:$lg) {
+            display: none; 
+          }
+
+    }
+}

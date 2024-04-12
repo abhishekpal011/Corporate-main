@@ -1,0 +1,120 @@
+#service {
+    padding: 96px 0;
+    background-color: $secondary;
+
+    @media screen and (max-width:$md){
+        padding: 50px 0;
+    }
+    @media screen and (max-width:$sm){
+        padding: 40px 0;
+    }
+    @media screen and (max-width:$xs){
+        padding: 30px 0;
+    }
+
+    .row{
+        @media screen and (max-width:$sm){
+           row-gap: 15px;
+        }
+    }
+
+    .service-title {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 74px;
+        @media screen and (max-width:$md){
+           margin-bottom: 30px;
+        }
+
+        @media screen and (max-width:$sm){
+            margin-bottom:0;
+         }
+
+         h6{
+            @media screen and (max-width:$sm){
+               letter-spacing: 0;
+               margin-bottom: 5px;
+             }
+         }
+
+        h2 {
+            color: $white;
+            @media screen and (max-width:$md){
+               font-size: $large-medium;
+              }
+              @media screen and (max-width:$sm){
+                font-size: $medium;
+               }
+               @media screen and (max-width:$xs){
+                font-size: $extra-small + 5px;
+                line-height:$small + 5px;
+               }
+        }
+    }
+
+    .service-card {
+        position: relative;
+        width: calc(50% - 26px);
+
+        @media screen and (max-width:$sm){
+           width: 100%;
+        }
+       
+       
+
+        .service-card-image {
+            width: 100%;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                transition: all ease .5s;
+                transform:scale(1);
+            }
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background: linear-gradient(1deg, #FD5C30 0.53%, rgba(0, 0, 0, 0.00) 101.68%);
+            }
+            &:hover img{
+                transform:scale(1.2);
+            }
+            .service-card-text {
+                position: absolute;
+                bottom: 84px;
+                left: 37px;
+                z-index: 2;
+                @media screen and (max-width:$md){
+                    bottom: 30px;
+                    left: 15px;
+                    right: 15px;
+                  }
+
+                  h4{
+                    @media screen and (max-width:$xs){
+                       font-size: $extra-small - 2px;
+                     }
+                  }
+    
+                p {
+                    margin-top: 20px;
+                    font-size: $mini-size;
+                    color: $white;
+                    font-family: poppins;
+                    font-weight: 400;
+                    line-height: $small;
+                    max-width: 388px;
+                    @media screen and (max-width:$xs){
+                       margin-top: 0;
+                       line-height: $extra-small-height;
+                       font-size: $extra-small - 6px;
+                      }
+                }
+            }
+        }
+    }   
+}
